@@ -5,3 +5,172 @@
     text-decoration: none;
     outline: none;
 }
+
+body {
+    background-color: ghostwhite;
+}
+
+/* for marks */
+.yes {
+    color: green;
+}
+
+.no {
+    color: orangered;
+}
+
+/* -------------------------------------------------------------------------  */
+
+svg {
+    width: 2rem;
+}
+
+header {
+    background-color: #6563FF;
+    position: sticky;
+    padding: 1rem 2rem;
+    color: #fff;
+    font-weight: 700;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 4rem;
+}
+
+.logo {
+    justify-self: start;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+table {
+    border-collapse: collapse;
+    border-radius: 3px;
+    border-bottom: 3px solid lightblue;
+    border-top: 3px solid lightblue;
+}
+
+thead {
+    background-color: #0807478e;
+    color: #fff;
+}
+
+thead button {
+    width: 100%;
+    height: 100%;
+    font-weight: 500;
+    font-size: 1rem;
+    border-top-right-radius: 3px;
+    border: 0;
+    color: orangered;
+    background-color: transparent;
+    text-align: right;
+    padding: 0.1rem 1rem;
+}
+
+tr:nth-child(3n+2) {
+    background-color: rgba(173, 216, 230, 0.514);
+}
+
+
+th {
+    width: 20rem;
+    text-align: left;
+    padding: 0.1rem 1rem;
+    border: 1px solid lightblue;
+    margin: 0;
+}
+
+th:last-of-type {
+    padding: 0;
+}
+
+td {
+    padding: 0.1rem 1rem;
+}
+
+td:last-of-type {
+    text-align: right;
+}
+
+td:nth-child(odd),
+th:nth-child(odd) {
+    border-left: 3px solid lightblue;
+    border-right: 3px solid lightblue;
+}
+
+
+td>svg {
+    fill: orangered;
+}
+
+
+.new_book {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.form {
+    background-color: rgba(0, 0, 0, 0.671);
+    padding: 4rem;
+    position: absolute;
+    right: 0;
+    top: 4rem;
+    bottom: 0;
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(173, 216, 230, 0.712);
+    padding: 2rem;
+    border-radius: 6px;
+    width: 80%;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 1rem;
+}
+
+form div:last-of-type {
+    display: flex;
+    flex-direction: row;
+    margin: 2rem 1rem;
+}
+
+form button {
+    border-radius: 3px;
+    width: fit-content;
+    align-self: center;
+    padding: 0.5rem 3rem;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 2rem;
+}
+
+input {
+    border-radius: 3px;
+    border: 0;
+    border-bottom: 1px solid lightblue;
+    background-color: transparent;
+}
+
+label {
+    font-weight: bold;
+}
