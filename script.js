@@ -18,6 +18,7 @@ removeAll.addEventListener('click', () =>
     for (let i = 0; i < books.length; i++)
     {
         console.dir(books[ i ].title);
+        Store.removeBook(books[ i ].title);
     }
 })
 
