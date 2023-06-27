@@ -17,9 +17,11 @@ removeAll.addEventListener('click', () =>
 
     for (let i = 0; i < books.length; i++)
     {
-        console.dir(books[ i ].title);
         Store.removeBook(books[ i ].title);
     }
+
+    const list = document.querySelector('tbody');
+    list.innerHTML = ``;
 })
 
 // Store class
@@ -115,7 +117,6 @@ class Library
     }
 }
 
-document.addEventListener('DOMContentLoaded', Library.displayBooks);
 
 // AddNewBook with help of form input 
 document.querySelector('form').addEventListener('submit', (e) =>
@@ -153,3 +154,6 @@ Store.addBook(book1);
 Store.addBook(book2);
 Store.addBook(book3);
 Store.addBook(book4);
+
+
+Library.displayBooks();

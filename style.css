@@ -70,7 +70,7 @@ header {
 }
 
 .table_container {
-    height: 306px;
+    max-height: 306px;
     overflow: auto;
     background-color: whitesmoke;
     margin-top: 5rem;
@@ -124,7 +124,7 @@ th {
     border-top: 1px solid rgba(173, 216, 230);
     border-bottom: 1px solid rgba(173, 216, 230);
     vertical-align: center;
-    width: 20rem;
+    min-width: 10rem;
     text-align: left;
     height: 40px;
 }
