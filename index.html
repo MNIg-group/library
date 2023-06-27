@@ -8,7 +8,6 @@
         <script src="https://kit.fontawesome.com/a7221279c0.js" crossorigin="anonymous"></script>
         <title>Library</title>
         <link rel="stylesheet" href="./style.css">
-        <script src="./script.js" defer></script>
     </head>
 
     <body>
@@ -21,90 +20,62 @@
                 </svg>
                 Library
             </div>
-            <div class="new_book">
+            <button id="newBook" class="new_book">
                 <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 24 24" id="book">
-                    <path fill="#add8e6"
+                    <path fill="#fff"
                         d="M15,6H9A1,1,0,0,0,8,7v4a1,1,0,0,0,1,1h6a1,1,0,0,0,1-1V7A1,1,0,0,0,15,6Zm-1,4H10V8h4Zm3-8H5A1,1,0,0,0,4,3V21a1,1,0,0,0,1,1H17a3,3,0,0,0,3-3V5A3,3,0,0,0,17,2Zm1,17a1,1,0,0,1-1,1H6V4H17a1,1,0,0,1,1,1Z">
                     </path>
-                </svg>
-            </div>
+                </svg>New Book
+            </button>
         </header>
         <main>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Title</th>
-                        <th>Author</th>
-                        <th>Pages</th>
-                        <th>Status</th>
-                        <th><button id="deleteBtn" class="delete_btn">Remove All</button></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Intelligent Design</td>
-                        <td>by William Dembski</td>
-                        <td>290</td>
-                        <td><i class="fa-solid fa-check yes"></i></td>
-                        <td><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                <title>trash-can-outline</title>
-                                <path
-                                    d="M9,3V4H4V6H5V19A2,2 0 0,0 7,21H17A2,2 0 0,0 19,19V6H20V4H15V3H9M7,6H17V19H7V6M9,8V17H11V8H9M13,8V17H15V8H13Z" />
-                            </svg></td>
-                    </tr>
-                    <tr>
-                        <td>Intelligent Design</td>
-                        <td>by William Dembski</td>
-                        <td>290</td>
-                        <td><i class="fa-solid fa-xmark no"></i></td>
-                        <td><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                <title>trash-can-outline</title>
-                                <path
-                                    d="M9,3V4H4V6H5V19A2,2 0 0,0 7,21H17A2,2 0 0,0 19,19V6H20V4H15V3H9M7,6H17V19H7V6M9,8V17H11V8H9M13,8V17H15V8H13Z" />
-                            </svg></td>
-                    </tr>
-                    <tr>
-                        <td>Intelligent Design</td>
-                        <td>by William Dembski</td>
-                        <td>290</td>
-                        <td><i class="fa-solid fa-check yes"></i></td>
-                        <td><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                <title>trash-can-outline</title>
-                                <path
-                                    d="M9,3V4H4V6H5V19A2,2 0 0,0 7,21H17A2,2 0 0,0 19,19V6H20V4H15V3H9M7,6H17V19H7V6M9,8V17H11V8H9M13,8V17H15V8H13Z" />
-                            </svg></td>
-                    </tr>
-                </tbody>
-            </table>
-            <div class="form">
+            <div class="table_container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Author</th>
+                            <th>Pages</th>
+                            <th>Status</th>
+                            <th><button id="deleteBtn" class="delete_btn">Remove All</button></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- List of Books  -->
+                    </tbody>
+                </table>
+            </div>
+            <div class="form hidden" id="formContainer">
                 <form>
                     <div>
                         <h1>New Book</h1>
                     </div>
                     <div>
                         <label for="title">
-                            Title</label><input type="text" name="title" id="title">
+                            Title</label><input type="text" name="title" id="title" autocomplete="off" required>
                     </div>
 
                     <div>
                         <label for="author">
-                            Author </label><input type="text" name="author" id="author">
+                            Author </label><input type="text" name="author" id="author" autocomplete="off" required>
                     </div>
 
                     <div>
                         <label for="pages">
-                            Pages</label><input type="number" name="pages" id="pages">
+                            Pages</label><input type="number" name="pages" id="pages" autocomplete="off" required>
                     </div>
 
                     <div>
                         <label for="read">
-                            You read it (yes/no)? </label><input type="checkbox" name="read" id="read">
+                            I have already read this book!</label><input type="checkbox" name="read" id="read">
                     </div>
 
                     <button type="submit">Add to Library</button>
                 </form>
             </div>
         </main>
+
+        <script src="./script.js"></script>
     </body>
 
 </html>
