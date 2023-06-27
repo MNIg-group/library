@@ -90,6 +90,8 @@ class Library
         row.appendChild(bookPages);
         // Book status (read / unread)
         const bookStat = document.createElement('td');
+        const statBtn = document.createElement('button');
+        statBtn.classList.add('statBtn');
         const statSymbol = document.createElement('i');
         if (book.stat === false)
         {
@@ -98,12 +100,12 @@ class Library
         {
             statSymbol.classList.add('fa-solid', 'fa-check', 'yes');
         }
-        bookStat.appendChild(statSymbol);
+        statBtn.appendChild(statSymbol);
+        bookStat.appendChild(statBtn);
         row.appendChild(bookStat);
         // Button for removing one book into library's stock
         const bookDelete = document.createElement('td');
         bookDelete.innerHTML = `<button id="deleted" onclick="removeRow(this)" ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                    <title>trash-can-outline</title>
                                     <path
                                     fill="orangered"
                                         d="M9,3V4H4V6H5V19A2,2 0 0,0 7,21H17A2,2 0 0,0 19,19V6H20V4H15V3H9M7,6H17V19H7V6M9,8V17H11V8H9M13,8V17H15V8H13Z" />

@@ -55,7 +55,7 @@ header {
     padding: 1rem 2rem;
     color: #fff;
     font-weight: 700;
-    font-size: 28px;
+    font-size: 1.75rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -70,7 +70,7 @@ header {
 }
 
 .table_container {
-    max-height: 306px;
+    max-height: 31.25rem;
     overflow: auto;
     background-color: whitesmoke;
     margin-top: 5rem;
@@ -253,4 +253,11 @@ input {
 
 label {
     font-weight: bold;
+}
+
+td>button {
+    width: fit-content;
+    height: 100%;
+    border: 0;
+    background-color: transparent;
 }
