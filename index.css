@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hidden {
+    display: none;
+    opacity: 0;
+}
+
+.container {
+    height: 100svh;
+    width: 100%;
+    position: relative;
+}
+
+.login-page,
+.signup-page {
+    position: absolute;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+h1 {
+    align-self: center;
+    font-weight: bold;
+    margin: 2rem;
+}
+
+span {
+    display: inline-block;
+    font-weight: bold;
+    width: 200px;
+}
+
+label {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin: 0 1rem;
+}
+
+input {
+    width: 100%;
+}
+
+.btn {
+    padding: .4rem 1rem;
+    width: 100%;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+/* validity check */
+
+.valid {}
+
+.invalid {}
