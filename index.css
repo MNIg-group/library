@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    height: 100svh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.login-page,
+.signup-page {
+    background-color: wheat;
+    position: absolute;
+    right: -100%;
+}
+
+span {
+    display: inline-block;
+    font-weight: bold;
+    width: 200px;
+}
+
+label {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin: 0 1rem;
+}
+
+
+
+.btn {
+    padding: .4rem 1rem;
+    width: 100%;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+/* validity check */
+
+.valid {}
+
+.invalid {}
+
+.show {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100svh;
+    width: 100svw;
+    display: flex;
+    flex-direction: column;
+}
+
+.show>h1 {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.show .form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.show .form input {
+    width: 50vw;
+    padding: .3rem;
+    border-radius: 3px;
+    outline: none;
+    background-color: rgba(128, 128, 128, 0.173);
+    border: none;
+}
