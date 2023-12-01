@@ -11,43 +11,35 @@
 
     <body>
         <div class="container">
-            <div class="login-page hidden">
+            <div id="LoginPage" class="login-page ">
                 <h1>Login</h1>
-                <form id="login-form" class="form">
-                    <label for="email">
+                <form id="login-form" class="form" action="./App/index.html">
+                    <label for="signin-email">
                         <span>Email:</span>
-                        <input type="text" name="Email" id="email">
+                        <input type="text" id="signin-email">
                     </label>
-                    <label for="password">
+                    <label for="signin-password">
                         <span>Password:</span>
-                        <input type="password" name="Password" id="password">
+                        <input type="password" id="signin-password">
                     </label>
                     <button id="login-btn" class="btn">Login</button>
                 </form>
             </div>
 
-            <div class="signup-page ">
+            <div id="SignupPage" class="signup-page show">
                 <h1>Signup</h1>
                 <form id="signup-form" class="form">
-                    <label for="email">
+                    <label for="signup-email">
                         <span>Email:</span>
-                        <input type="text" name="Email" id="email">
+                        <input type="text" id="signup-email">
                     </label>
-                    <label for="country">
-                        <span>Country:</span>
-                        <input type="text" name="Country" id="country">
-                    </label>
-                    <label for="zipCode">
-                        <span>Zip Code:</span>
-                        <input type="number" name="ZipCode" id="zipCode">
-                    </label>
-                    <label for="password">
+                    <label for="signup-password">
                         <span>Password:</span>
-                        <input type="password" name="Password" id="password">
+                        <input type="password" id="signup-password">
                     </label>
-                    <label for="password-conform">
+                    <label for="signup-password-conform">
                         <span>Conform Password:</span>
-                        <input type="password" id="password-conform">
+                        <input type="password" id="signup-password-conform">
                     </label>
                     <button id="signup-btn" class="btn">Signup</button>
                 </form>
